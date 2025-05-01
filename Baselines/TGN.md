@@ -1,6 +1,6 @@
 # Baseline: TGN
 
-According to the official paper ([TGN Paper](https://arxiv.org/abs/2006.10637)), the hyperparameter tuning ranges are as follows:
+According to the official paper ([TGN Paper](https://arxiv.org/pdf/2006.10637)), the hyperparameter tuning ranges are as follows:
 
 - **Number of most recent neighbors (k)**:  
   Number of neighbors sampled per layer for temporal graph aggregation, which controls the range of structural information a node can gather.  

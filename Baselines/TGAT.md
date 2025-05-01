@@ -1,6 +1,6 @@
 # Baseline: TGAT
 
-According to the official paper ([TGAT Paper](https://arxiv.org/abs/2006.10637)), the hyperparameter tuning ranges are as follows:
+According to the official paper ([TGAT Paper](https://arxiv.org/pdf/2002.07962)), the hyperparameter tuning ranges are as follows:
 
 
 - **Number of TGAT Layers (num_layer)**:  
