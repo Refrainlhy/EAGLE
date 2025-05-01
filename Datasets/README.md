@@ -1,6 +1,6 @@
-# Dataset
+# 📊 Dataset
 
-## Link Prediction
+## 🔗 Link Prediction
 
 We conducted experiments on the `Contacts`, `LastFM`, `Wikipedia`, `Reddit`, `AskUbuntu`, `SuperUser`, and `WikiTalk` datasets.
 The raw dataset files can be obtained from the following link:
@@ -9,7 +9,7 @@ The raw dataset files can be obtained from the following link:
 
 Note: For our experimental setup, we generated 99 negative samples for each sample in the test set. For details on data processing, please refer to `link_data_loader.py`.
 
-## Node Classification
+## 🎯 Node Classification
 
 We conducted experiments on the `Trade`, `Genre`, `Reddit`, and `Token` datasets, using the raw dataset files and splits provided by [TGB Datasets](https://tgb.complexdatalab.com/docs/nodeprop/).
 

@@ -1,7 +1,5 @@
 # Baseline: GraphMixer
 
-We use the code implementation from DyGLib benchmark ([DyGLib GitHub](https://github.com/yule-BUAA/DyGLib/)) for our experiments. 
-
 According to the official paper ([GraphMixer Paper](https://openreview.net/pdf?id=ayPPc0SyLv1)), the hyperparameter tuning ranges are as follows:
 
 - **Time-slot size (T)**:  

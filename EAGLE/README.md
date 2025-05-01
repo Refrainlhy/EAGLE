@@ -1,4 +1,4 @@
-# **EAGLE**
+# 🦅 **EAGLE**
 
 ## 📦 Requirements
 
@@ -34,31 +34,37 @@ The datasets used for experiments can be found in the `Datasets` directory locat
 
 ## ▶️ Run & Eval EAGLE
 
-### EAGLE-Structure Example
+## 🔗 Link Prediction
+
+### EAGLE-Structure
 
 To run EAGLE-Structure, use the following command:
 
 ```bash
+cd link_prediction
+
 python train_structure.py --dataset_name wikipedia --topk 100 --alpha 0.9 --beta 0.8 --gpu 0
 ```
 
 The optimal parameters are as follows:
 
-| Dataset     | $\alpha$ in Equation (8) | $\beta$ in Equation (9) | topk |
-|-------------|-------|------|------|
-| **Contacts**  | 0.3   | 0.3  | 100  |
-| **LastFM**    | 0.9   | 0.2  | 100  |
-| **Wikipedia** | 0.9   | 0.8  | 100   |
-| **Reddit**    | 0.9   | 0.9  | 100  |
-| **AskUbuntu** | 0.3   | 0.5  | 50   |
-| **SuperUser** | 0.2   | 0.5  | 50   |
-| **WikiTalk**  | 0.5   | 0.5  | 100  |
+| Dataset     | topk | $\alpha$ in Equation (8) | $\beta$ in Equation (9) |
+|-------------|------|--------------------------|-------------------------|
+| **Contacts**  | 100  | 0.3                      | 0.3                     |
+| **LastFM**    | 100  | 0.9                      | 0.2                     |
+| **Wikipedia** | 100  | 0.9                      | 0.8                     |
+| **Reddit**    | 100  | 0.9                      | 0.9                     |
+| **AskUbuntu** | 50   | 0.3                      | 0.5                     |
+| **SuperUser** | 50   | 0.2                      | 0.5                     |
+| **WikiTalk**  | 100  | 0.5                      | 0.5                     |
 
-### EAGLE-Time Example
+### EAGLE-Time
 
 To run EAGLE-Time, use the following command:
 
 ```bash
+cd link_prediction
+
 python train_time.py --dataset_name wikipedia --topk 15 --lr 0.001 --weight_decay 5e-5 --gpu 0
 ```
 
@@ -74,12 +80,35 @@ The optimal parameters are as follows:
 | superuser   | 30                                   | 0.0001             | 0.0               |
 | wikitalk    | 30                                   | 0.001              | 0.0               |
 
-### EAGLE-Hybrid Example
+### EAGLE-Hybrid
 
 To run EAGLE-Hybrid, use the following command:
 
 ```bash
+cd link_prediction
+
 python train_hybrid.py --dataset_name wikipedia --gpu 0
 ```
 
 **Note**: EAGLE-Hybrid is a weighted combination of EAGLE-Structure and EAGLE-Time. You need to first run structure module and time module with their optimal parameters listed above before training EAGLE-Hybrid.
+
+## 🎯 Node Classification
+
+To run EAGLE, use the following command:
+
+```bash
+cd node_classification
+
+python tppr.py --dataset_name tgbn-trade --k 50 --tppr_alpha 0.6 --tppr_beta 0.9 --gamma 0.9 --window 4 --gpu 0
+```
+
+The optimal parameters are as follows:
+
+| Dataset        | topk | $\alpha$ in Equation (8)  | $\beta$ in Equation (9) | self_weight $\gamma$ | window_size |
+|----------------|------|---------------------------|--------------------------|----------------------|-------------|
+| tgbn-trade     | 50   | 0.6                       | 0.9                      | 0.9                  | 4           |
+| tgbn-genre     | 20   | 0.1                       | 0.1                      | 0.1                  | 7           |
+| tgbn-reddit    | 20   | 0.1                       | 0.1                      | 0.1                  | 6           |
+| tgbn-token     | 20   | 0.1                       | 0.1                      | 0.1                  | 5           |
+
+---

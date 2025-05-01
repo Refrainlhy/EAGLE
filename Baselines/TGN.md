@@ -1,7 +1,5 @@
 # Baseline: TGN
 
-We use the code implementation from DyGLib benchmark ([DyGLib GitHub](https://github.com/yule-BUAA/DyGLib/)) for our experiments. 
-
 According to the official paper ([TGN Paper](https://arxiv.org/abs/2006.10637)), the hyperparameter tuning ranges are as follows:
 
 - **Number of most recent neighbors (k)**:  

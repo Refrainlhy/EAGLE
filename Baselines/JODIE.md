@@ -1,7 +1,5 @@
 # Baseline: JODIE
 
-We use the code implementation from DyGLib benchmark ([DyGLib GitHub](https://github.com/yule-BUAA/DyGLib/)) for our experiments. 
-
 According to the official paper ([JODIE Paper](https://arxiv.org/abs/1908.01207)), the hyperparameter tuning ranges are as follows:
 
 - **Dynamic embedding size (emb_dim)**:  
