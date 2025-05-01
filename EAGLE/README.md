@@ -99,7 +99,7 @@ To run EAGLE, use the following command:
 ```bash
 cd node_classification
 
-python tppr.py --dataset_name tgbn-trade --k 50 --tppr_alpha 0.6 --tppr_beta 0.9 --gamma 0.9 --window 4 --gpu 0
+python train.py --dataset_name tgbn-trade --k 50 --tppr_alpha 0.6 --tppr_beta 0.9 --gamma 0.9 --window 4 --gpu 0
 ```
 
 The optimal parameters are as follows:
