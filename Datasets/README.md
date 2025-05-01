@@ -11,9 +11,14 @@ Note: For our experimental setup, we generated 99 negative samples for each samp
 
 ## Node Classification
 
-We conducted experiments on the Trade, Genre, Reddit, and Token datasets, using the raw dataset files and splits provided by TGB.
+We conducted experiments on the `Trade`, `Genre`, `Reddit`, and `Token` datasets, using the raw dataset files and splits provided by [TGB Datasets](https://tgb.complexdatalab.com/docs/nodeprop/).
 
-For the code, please refer to `node_data_loader.py`, which includes dataset downloading, splitting, and loading processes. 
+To install the TGB dependency, run:
 
-For more information, please refer to TGB's page at [TGB Node Datasets](https://tgb.complexdatalab.com/docs/nodeprop/).
+```bash
+pip install py-tgb
+```
 
+We recommend using the TGB's interface, which includes downloading and standardized splitting. You can refer to `node_data_loader.py` for example usage of this interface.
+
+For further details, please consult the [TGB documentation](https://docs.tgb.complexdatalab.com/).
