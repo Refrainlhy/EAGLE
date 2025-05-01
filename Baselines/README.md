@@ -8,4 +8,4 @@ Here contains description and optimal configurations for all baselines. You can 
 - [TGN](https://arxiv.org/pdf/2006.10637)
 - [GraphMixer](https://openreview.net/pdf?id=ayPPc0SyLv1)
 - [Zebra](https://www.vldb.org/pvldb/vol16/p1332-li.pdf)
-- [DyGLib](https://arxiv.org/pdf/2303.13047)
+- [DyGFormer](https://arxiv.org/pdf/2303.13047)
